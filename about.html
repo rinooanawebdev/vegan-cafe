@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>cafeabout</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- title image -->
+		<link rel="shortcut icon" href="images/logomaru.png">
+		<!-- normalize css -->
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+		<!-- mystyle css -->
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <script href="js/script.js" defer></script> -->
+	</head>
+
+<body class="body">
+	<header class="header3">
+		
+		<!-- humberger menu  -->
+		<button type="button" class="menu-btn">
+			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+		</button>
+
+
+		<nav class="navnon">
+			<ul>
+				<li class="navimg"><a href="index.html" ><img src="images/logotop.png"></a></li>
+				<div class="navdisplay">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</div>
+			</ul>
+		</nav>
+		<!-- humberger menu  -->
+		<nav>
+			<ul>
+				<div class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</div>
+			</ul>
+		</nav>
+		<h1 class="contact">About us</h1>
+	</header>
+	
+	
+	<section class="section1">
+			<h2 class="abouth2">Makes you look and feel beauty</h2>
+			<p class="aboutp1">We were born with the hope that it will give a chance to <br>
+							feel closer to organic and vegan. All dishes are freshly <br>
+							prepared in the kitchen.And the ingredients are organic <br>
+							ingredients grown organically and pesticide-free as much as possible. <br>
+							All seasonings and sauces are handmade, and we offer homemade dishes <br>
+							that are lovingly made.
+			</p>
+		 
+		
+		
+		
+	</section>
+	
+	<section class="section2">
+		<h3 class="abouth3">Food</h3>
+			<p class="aboutp" id="animation"> We use all plant bace ingredients, including soup stock and seasonings. <br>
+			We do not use any animal-derived foods such as meat, fish and dairy products. Safe, secure and healthy.</p>
+		<h3 class="abouth3">Environment</h3>
+			<p class="aboutp">Understand the fact that the livestock industry is affecting global warming and the decline of water resources, <br>
+			Little by little what we can do now to keep the earth beautiful forever. </p>
+		<h3 class="abouth3">Love</h3>
+			<p class="aboutp">About yourself, your loved ones, the earth, animals, the universe, <br>
+			Loving food, time and thoughts for all your loved ones.</p>
+	</section>
+
+	<footer>
+		<div class="footer07">
+			<div class="wrap">
+			 <div class="box">
+			   <h3>Follow</h3>
+			   <ul>
+				<a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
+			  </ul>
+	
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Our Story</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			  </ul>
+			 </div>
+			 <div class="box">
+			   <h3>Natural -vegan cafe-</h3>
+			   <p>
+				We were born with the hope that it will give a chance to
+								feel closer to organic and vegan. 
+			   </p>
+			 </div>
+			 <p class="copyright">
+			   &copy; 2023 Natural vegan cafe
+			 </p>
+			</div>
+		   </div>
+		</footer>
+
+		<!-- humberger menu script -->
+	<!-- humberger menu script -->
+	<script>
+		'use strict'
+
+				window.onload = function() {
+					var bar = new ProgressBar.Line(time_text, {
+					strokeWidth: 0,
+					duration: 1000,
+					trailWidth: 0,
+					// text style
+					text: {
+						style: {
+							position:'absolute',
+							left:'50%',
+							top:'50%',
+							padding:'0',
+							margin:'0',
+							transform:'translate(-50%,-50%)',
+							'font-size':'2rem',
+							color:'#fff',
+						},
+						autoStyleContainer: false 
+					},
+					step: function(state, bar) {
+						bar.setText(Math.round(bar.value() * 100) + ' %'); 
+					}
+					
+					});
+						
+				bar.ansimate(1.0, function () {
+					$("#time").delay(500).fadeOut(800);
+				})
+				};  
+						
+
+
+							
+				document.querySelector('.menu-btn').addEventListener('click', function(){
+				document.querySelector('.menu').classList.toggle('is-active');
+				});
+						
+						
+		
+		</script>
+	</body>
+</html>

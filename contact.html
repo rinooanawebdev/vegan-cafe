@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cafecontact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- title image -->
+		<link rel="shortcut icon" href="images/logomaru.png">
+		<!-- normalize css -->
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+		<!-- mystyle css -->
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <script href="js/script.js" defer></script> -->
+	</head>
+
+<body class="body">
+	
+	<header class="header2">
+	
+			<!-- humberger menu  -->
+			<button type="button" class="menu-btn">
+				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+			</button>
+
+<!-- humberger menu  -->
+			<nav class="navnon">
+				<ul>
+					<li class="navimg"><a href="index.html" ><img src="images/logotop.png" class="navimg2"></a></li>
+					<div class="navdisplay">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Our Story</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</div>
+				</ul>
+			</nav>
+
+			<nav>
+				<ul>
+					<div class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Our Story</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</div>
+				</ul>
+			</nav>
+		
+	<h1 class="contact">Contact</h1>
+	</header>
+	
+	<article class="contactt">
+  
+   
+
+  	
+		
+  
+		<p class="contactp">For inquiries and requests, please use the form below, or call or mail. <br> Please fill in the required items and press ”Send".</p>
+		
+   
+  	
+ 	 <form>
+			<p><label>First Name（required）:
+				<input type="text" name="name" placeholder="please enter First Name"　required>
+				</label>
+			</p>
+			<p><label>Last Name（required）:
+				<input type="text" name="name" placeholder="please enter Last Name"　required>
+				</label>
+			</p>
+			<p><label>Mail（required）:
+				<input type="email" name="mail" placeholder="Please enter email"　required>
+				</label>
+			</p>
+			<p><label>Contact  :
+				<textarea name="usercomment" placeholder="Please write as specific as possible"></textarea>
+				</label>
+			</p>
+			<p><button type="submit">Send</button></p>
+		 
+		<div class="circlecon">
+			<div class="circlediv">
+				<div class="circle-11"></div>
+			</div>
+			<div class="circlediv2">
+				<div class="circle-22"></div>
+			</div>
+		</div>
+		
+		 	
+  	</form>
+	</article>
+	
+	<footer>
+		<div class="footer07">
+			<div class="wrap">
+			 <div class="box">
+			   <h3>Follow</h3>
+			   <ul>
+				<a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
+			  </ul>
+	
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Our Story</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			  </ul>
+			 </div>
+			 <div class="box">
+			   <h3>Natural -vegan cafe-</h3>
+			   <p>
+				We were born with the hope that it will give a chance to
+								feel closer to organic and vegan. 
+			   </p>
+			 </div>
+			 <p class="copyright">
+			   &copy; 2023 Natural vegan cafe
+			 </p>
+			</div>
+		   </div>
+		</footer>
+		<!-- humberger menu script -->
+		<script>
+			'use strict'
+
+					window.onload = function() {
+						var bar = new ProgressBar.Line(time_text, {
+						strokeWidth: 0,
+						duration: 1000,
+						trailWidth: 0,
+						// text style
+						text: {
+							style: {
+								position:'absolute',
+								left:'50%',
+								top:'50%',
+								padding:'0',
+								margin:'0',
+								transform:'translate(-50%,-50%)',
+								'font-size':'2rem',
+								color:'#fff',
+							},
+							autoStyleContainer: false 
+						},
+						step: function(state, bar) {
+							bar.setText(Math.round(bar.value() * 100) + ' %'); 
+						}
+						
+						});
+							
+					bar.ansimate(1.0, function () {
+						$("#time").delay(500).fadeOut(800);
+					})
+					};  
+							
+
+
+								
+					document.querySelector('.menu-btn').addEventListener('click', function(){
+					document.querySelector('.menu').classList.toggle('is-active');
+					});
+							
+							
+			
+			</script>
+		
+	
+	</div>
+</body>
+</html>
